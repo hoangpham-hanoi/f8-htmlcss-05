@@ -121,12 +121,14 @@ a {
 
 /* Bank-card */
 .bank-card {
+  position: relative;
   width: 250px;
   height: 150px;
   flex-shrink: 0;
   padding: 16px;
   border-radius: 20px;
-  background: linear-gradient(76deg, #30acea 11.52%, #316fea 70.78%);
+  background: linear-gradient(76deg, #8f81f9 11.52%, #8476e3 70.78%);
+  overflow: hidden;
 }
 
 .card-top {
@@ -189,6 +191,26 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.bank-decorate-01 {
+  position: absolute;
+  z-index: 1;
+  top: -58px;
+  left: -0;
+  width: 105px;
+  height: 93px;
+  flex-shrink: 0;
+}
+
+.bank-decorate-02 {
+  position: absolute;
+  z-index: 1;
+  bottom: -16px;
+  right: 16px;
+  width: 126px;
+  height: 105px;
+  flex-shrink: 0;
 }
 
 /* Header */
@@ -606,4 +628,159 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.75; /* 175% */
+}
+
+/* -- payments -- */
+.payments {
+  margin-top: 160px;
+}
+
+.payments-inner {
+  display: flex;
+  align-items: center;
+}
+
+.payments-content {
+  width: 470px;
+  flex-shrink: 0;
+}
+
+.payments-heading {
+  margin-top: 12px;
+}
+
+.payments-desc {
+  margin-top: 20px;
+}
+
+.payments-list {
+  margin-top: 28px;
+}
+
+.payments-item {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-top: 18px;
+  color: #212832;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+.payments-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #7264d6;
+}
+
+.payments-btn {
+  margin-top: 38px;
+  min-width: 149px;
+  height: 58px;
+  border-radius: 8px;
+}
+
+.payments-media {
+  flex-grow: 1;
+  position: relative;
+}
+
+.payments-bank-card {
+  margin-left: auto;
+  margin-right: 88px;
+  transform: scale(1.982);
+  transform-origin: right;
+}
+
+.payments-send {
+  position: absolute;
+  z-index: 1;
+  top: -128px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 276px;
+  height: 86px;
+  flex-shrink: 0;
+  padding: 13px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.payments-send__content {
+  margin-left: 14px;
+  flex-grow: 1;
+}
+
+.payments-send__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payments-send__row + .payments-send__row {
+  margin-top: 2px;
+}
+
+.payments-send__row--text {
+  color: #212832;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payments-send__row--value {
+  color: #212832;
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payments-send__row--method,
+.payments-send__row--date {
+  color: #696d76;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payments-income {
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  padding: 15px;
+  border-radius: 16px;
+  background: #439f90;
+}
+
+.payments-income__text {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payments-income__value {
+  margin-top: 6px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
