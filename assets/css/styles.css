@@ -82,8 +82,9 @@ a {
 }
 
 .section-slogan {
-  margin-left: 28px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
   color: #696d77;
   font-size: 1.6rem;
   font-style: normal;
@@ -92,10 +93,6 @@ a {
 }
 
 .section-slogan::before {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -28px;
   content: "";
   width: 18px;
   height: 2px;
@@ -900,4 +897,126 @@ a {
   margin-top: 38px;
   min-width: 149px;
   height: 58px;
+}
+
+/* -- testinominal -- */
+.testinominal {
+  margin-top: 160px;
+}
+
+.testinominal-slogan {
+  justify-content: center;
+}
+
+.testinominal-heading {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.testinominal-desc {
+  margin-left: auto;
+  margin-right: auto;
+  width: 435px;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.section-clients {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 30px;
+  overflow: hidden;
+}
+
+.section-clients__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-clients__item:hover .section-clients__say,
+.section-clients__item:hover .section-clients__say::after {
+  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.07);
+  border-color: #fff;
+}
+
+.section-clients__say {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  padding: 42px 28px;
+  border: solid 1px #dfe2e8;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  color: #696d76;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54; /* 154.545% */
+  transition: ease 0.3s;
+}
+
+.section-clients__say::after {
+  position: absolute;
+  bottom: -25px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: solid 1px #dfe2e8;
+  border-top: none;
+  border-right: none;
+  rotate: -45deg;
+  transition: ease 0.3s;
+}
+
+.section-clients__thumb {
+  margin-top: 61px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #4ab5e3;
+}
+
+.section-clients__name {
+  margin-top: 20px;
+  color: #070052;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+
+.section-clients__job {
+  margin-top: 2px;
+  color: #696d76;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+}
+
+.testinominal-pagination {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.testinominal-pagination__item {
+  width: 24px;
+  height: 6px;
+  border: solid 1px #9b9fab;
+  border-radius: 2px;
+}
+
+.testinominal-pagination__item--active {
+  background-color: #7264d6;
+  border-color: #7264d6;
 }
