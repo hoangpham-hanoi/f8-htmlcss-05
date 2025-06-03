@@ -1129,6 +1129,7 @@ a {
 /* -- App -- */
 .app {
   margin-top: 160px;
+  margin-bottom: 100px;
 }
 
 .app-inner {
@@ -1197,3 +1198,109 @@ a {
 }
 
 /* ----- Footer ----- */
+.footer {
+}
+
+.footer-inner {
+  display: flex;
+  column-gap: 163px;
+}
+
+.footer-col__heading {
+  margin-bottom: 24px;
+  color: #212832;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+
+.footer-col__link {
+  display: block;
+  margin-top: 12px;
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+}
+
+.footer-subscribe {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscribe__label {
+  display: block;
+  color: #0a142f;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+
+.footer-subscribe__cta {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-subscribe__input {
+  width: 270px;
+  height: 52px;
+  flex-shrink: 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #8e919a;
+}
+
+.footer-subscribe__input::placeholder {
+  color: #8e919a;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer-btn {
+  background: #7264d6;
+  border-color: #7264d6;
+  outline: none;
+}
+
+.footer-contacts {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 100px;
+}
+
+.footer-contacts__email,
+.footer-contacts__tel {
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.footer-copyright {
+  margin-top: 28px;
+  padding: 28px;
+  background: #7264d6;
+}
+
+.footer-copyright__text {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
